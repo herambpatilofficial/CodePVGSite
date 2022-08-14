@@ -1,0 +1,131 @@
+<!doctype html>
+<html class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <nav class="flex flex-wrap items-center justify-between p-5 bg-blue-200 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-40">  
+        
+        <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
+            <img src="/media/CodePVG small.png" alt=""> <span class="ml-3 text-xl text-black">CodePVG</span>
+          </a>  
+       
+        
+              <div class="flex md:hidden">
+                <button id="hamburger">
+                  <img class="toggle block" src="https://img.icons8.com/fluent-systems-regular/2x/menu-squared-2.png" width="40" height="40" />
+                  <img class="toggle hidden" src="https://img.icons8.com/fluent-systems-regular/2x/close-window.png" width="40" height="40" />
+                </button>
+              </div>      
+              <div class="toggle hidden w-full md:w-auto md:flex text-right text-bold mt-5 md:mt-0 border-t-2 border-blue-900 md:border-none">        
+                <a href="#" class="block md:inline-block text-blue-900 hover:text-blue-500 px-3 py-3 border-b-2 border-blue-900 md:border-none">Home</a>
+                <a href="#about" class="block md:inline-block text-blue-900 hover:text-blue-500 px-3 py-3 border-b-2 border-blue-900 md:border-none">About</a>
+                <a href="#" class="block md:inline-block text-blue-900 hover:text-blue-500 px-3 py-3 border-b-2 border-blue-900 md:border-none">Initiatives</a>
+                <a href="#" class="block md:inline-block text-blue-900 hover:text-blue-500 px-3 py-3 border-b-2 border-blue-900 md:border-none">Contact</a>
+              </div>      
+              <a href="#" class="toggle hidden md:flex w-full md:w-auto px-4 py-2 text-right bg-blue-900 hover:bg-blue-500 text-white md:rounded">DSA Challenge</a>
+            </nav>  
+            <script>
+
+                
+            document.getElementById("hamburger").onclick = function toggleMenu() {
+                const navToggle = document.getElementsByClassName("toggle");
+                for (let i = 0; i < navToggle.length; i++) {
+                  navToggle.item(i).classList.toggle("hidden");
+                }
+              };
+              </script>
+
+<section class="relative h-screen flex flex-col items-center justify-center text-center text-white py-0 px-3">
+    
+    <div class="video-docker absolute top-0 left-0 w-full h-full overflow-hidden">
+        <video class="min-w-full min-h-full absolute object-cover" src="/media/Notebook - 197.mp4" type="video/mp4" autoplay muted loop></video>
+        
+    </div>
+    
+    <div class="video-content space-y-2">
+        <h1 class="font-light text-6xl">Build, Code, Aspire</h1>
+        <h3 class="font-light text-3xl">Creating the finest collegiate community</h3>
+        <div class="p-2 w-full">
+            <button class="flex mx-auto text-white bg-blue-500 border-0 py-2 px-8 focus:outline-none hover:bg-blue-600 rounded text-lg">Grow with CodePVG</button>
+          </div>
+        
+
+    </div>
+</section>
+
+<style>
+    .video-docker video {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.video-docker::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.video-content {
+  z-index: 2;
+}
+</style>
+
+<div class="2xl:container 2xl:mx-auto lg:py-16 lg:px-20 md:py-12 md:px-6 py-9 px-4">
+    <div class="flex flex-col lg:flex-row justify-between gap-8">
+        <div class="w-full lg:w-5/12 flex flex-col justify-center">
+            <h1 class="text-3xl lg:text-4xl font-bold leading-9 text-gray-800 pb-4">About CodePVG</h1>
+            <p class="font-normal text-base leading-6 text-gray-600">CodePVG is a community of highly motivated folks, interested in technology, startups, research and a range of different technological domains. We are the community who aspire to become the finest collegiate community, and we strive to build great things, conserve inter-disciplinary inclusive approach and escaping mediocrity!</p>
+        </div>
+        <div class="w-full lg:w-8/12">
+            <img class="w-full h-full" src="/media/maxwell-nelson-taiuG8CPKAQ-unsplash.jpg" alt="A group of People" />
+        </div>
+    </div>
+
+    <div class="flex lg:flex-row flex-col justify-between gap-8 pt-12" id="about">
+        <div class="w-full lg:w-5/12 flex flex-col justify-center">
+            <h1 class="text-3xl lg:text-4xl font-bold leading-9 text-gray-800 pb-4">Our Story</h1>
+            <p class="font-normal text-base leading-6 text-gray-600">CodePVG is actually way more than a college society, we started it to build a college level community of students in PVG's College of Engineering, and it got officially recognized by college after 4 months of its operation including technological discussions, podcasts, and a lot of other things, currently, we're working to make this story even more interesting, and primarily working in following domains currently.</p>
+        </div>
+        <div class="w-full lg:w-8/12 lg:pt-8">
+            <div class="grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 lg:gap-4 shadow-lg rounded-md">
+                <div class="p-4 pb-6 flex justify-center flex-col items-center">
+                    <img class="md:hidden block" src="/media/robotics.jpg" alt="Alexa featured Image" />
+                    <img class="md:block hidden" src="/media/robotics.jpg" alt="Alexa featured Image" />
+                    <p class="font-medium text-xl leading-5 text-gray-800 mt-4">Robotics & IoT</p>
+                </div>
+                <div class="p-4 pb-6 flex justify-center flex-col items-center">
+                    <img class="md:block hidden" src="/media/education.jpg" alt="Olivia featured Image" />
+                    <img class="md:hidden block" src="/media/education.jpg" alt="Olivia featured Image" />
+                    <p class="font-medium text-xl leading-5 text-gray-800 mt-4">Education</p>
+                </div>
+                <div class="p-4 pb-6 flex justify-center flex-col items-center">
+                    <img class="md:block hidden" src="/media/Codingabout.jpg" alt="Liam featued Image" />
+                    <img class="md:hidden block" src="/media/Codingabout.jpg" alt="Liam featued Image" />
+                    <p class="font-medium text-xl leading-5 text-gray-800 mt-4">Coding</p>
+                </div>
+                <div class="p-4 pb-6 flex justify-center flex-col items-center">
+                    <img class="md:block hidden" src="/media/research.jpg" alt="Elijah featured image" />
+                    <img class="md:hidden block" src="/media/research.jpg" alt="Elijah featured image" />
+                    <p class="font-medium text-xl leading-5 text-gray-800 mt-4">Research</p>
+                  
+                </div>
+            </div>
+        </div> 
+
+
+
+    </div>
+</div>
+
+
+
+</body>
+</html>
